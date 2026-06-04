@@ -1,0 +1,3 @@
+[submodule "DEVO"]
+	path = DEVO
+	url = https://github.com/arthurfou/DEVO.git
