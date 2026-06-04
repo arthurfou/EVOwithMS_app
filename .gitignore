@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.eggs/
+
+# Environnements
+.env
+.venv/
+env/
+
+# Gradio
+gradio_cached_examples/
+.gradio/
+
+# Data
+*.npy
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.pth
+*.pt
+results/
+datasets/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,4 +1,4 @@
-name: mon-projet-cv
+name: EVOwithMS
 channels:
   - pytorch
   - nvidia
@@ -10,6 +10,7 @@ dependencies:
   - pytorch::torchvision
   - pytorch::pytorch-cuda=12.4
   - opencv
+  - gradio
   - pip
   - pip:
     - segmentation-models-pytorch
