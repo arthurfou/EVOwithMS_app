@@ -1,21 +1,18 @@
 import gradio as gr
-from app.tabs import evimo_viewer, evs_viewer
+from app.tabs import event_viewer, segmentation, devo_pipeline
 
-with gr.Blocks(title="EVOwithMS") as demo:
-    gr.Markdown("# EVOwithMS — Event Visual Odometry with Motion Segmentation")
+with gr.Blocks(title="Motion Segmentation for Event Visual Odometry") as demo:
+    gr.Markdown("# Motion Segmentation for Event Visual Odometry")
 
     with gr.Tabs():
-        with gr.Tab("Filtrage EVIMO"):
-            evimo_viewer.build()
-
-        with gr.Tab("EV-IMO Filtered — Events"):
-            evs_viewer.build()
+        with gr.Tab("Event Viewer"):
+            event_viewer.build()
 
         with gr.Tab("Motion Segmentation"):
-            gr.Markdown("*À venir*")
+            segmentation.build()
 
-        with gr.Tab("DEVO Odometry"):
-            gr.Markdown("*À venir*")
+        with gr.Tab("DEVO Pipeline"):
+            devo_pipeline.build()
 
 if __name__ == "__main__":
-    demo.launch(share=True)
+    demo.launch(share=False)
