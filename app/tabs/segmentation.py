@@ -102,7 +102,7 @@ def build():
         gr.Markdown("### Visualiser")
 
         with gr.Row():
-            thicken_cb = gr.Checkbox(value=True, label="Thicken mask")
+            thicken_cb = gr.Checkbox(value=False, label="Thicken mask")
             radius_slider = gr.Slider(minimum=1, maximum=10, value=3, step=1, label="Rayon")
             fps_input = gr.Number(value=20, label="FPS", minimum=1, maximum=60)
 

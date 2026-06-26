@@ -1,5 +1,5 @@
 import gradio as gr
-from app.tabs import event_viewer, segmentation, devo_pipeline
+from app.tabs import event_viewer, segmentation, segmentation_dataset, devo_pipeline
 
 with gr.Blocks(title="Motion Segmentation for Event Visual Odometry") as demo:
     gr.Markdown("# Motion Segmentation for Event Visual Odometry")
@@ -10,6 +10,9 @@ with gr.Blocks(title="Motion Segmentation for Event Visual Odometry") as demo:
 
         with gr.Tab("Motion Segmentation"):
             segmentation.build()
+
+        with gr.Tab("Motion Segmentation dataset"):
+            segmentation_dataset.build()
 
         with gr.Tab("DEVO Pipeline"):
             devo_pipeline.build()
